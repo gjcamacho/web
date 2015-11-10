@@ -160,6 +160,52 @@
             <td>Tag Define</td>
         </tr>
         </table>
-        
+        <div id="texto">
+        </div>
+
+        <script type="text/javascript">
+            var x=0;
+
+            x=5;
+
+            x==6;
+
+            //x=x+1;
+
+            if(x==6){
+                alert((x==6) + " story…");
+            }
+            else{
+                alert("naaaah =(");
+            }
+
+            var element=document.getElementById("texto");
+
+            var html="";
+
+            html="<table>";
+
+            for(i=0;i<10;i++){
+                html=html+"<tr>";
+                
+                for(j=0;j<10;j++){
+                /*html=html+”<td>”;
+                html=html+””+i+”:”+j;
+                html=html+”</td>”;
+                */
+
+                html=html + "<td>" + i + ":" + j + "</td>";
+            }
+
+                html=html+"</tr>";
+            }
+
+            html=html+"</table>";
+
+            element.innerHTML=html;
+
+
+
+        </script>
     </body>
 </html>
